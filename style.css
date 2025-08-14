@@ -1,0 +1,233 @@
+/* Importa Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    font-family: 'Montserrat', Arial, 'Segoe UI', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333333;
+    text-align: center;
+    background-image: url('img/Tactic.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*display: flex; */
+   /* justify-content: center;*/
+   /* align-items: center;*/
+    margin: 0; 
+  /*  animation: fadeIn 2s ease-in-out;*/
+}
+    
+nav {
+  /*  width: 100%;
+    /*background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);*/
+   /* box-shadow: 0 2px 8px rgba(0,0,0,0.08);*/
+    padding: 0;
+    margin-bottom: 30px;
+   /* background-color: #4CAF50;*/
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 16px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s, border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #222;
+    border-bottom: 2px solid #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+/* Centrar la sección de información y la tabla */
+#informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Estilos atractivos para la tabla */
+#tabla-usuarios {
+    border-collapse: collapse;
+    width: 80%;
+    background: #f8fafc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#tabla-usuarios th, #tabla-usuarios td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+#tabla-usuarios thead {
+    background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+#tabla-usuarios tbody tr:nth-child(even) {
+    background: #e6f7ff;
+}
+
+#tabla-usuarios tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+#tabla-usuarios tbody tr:hover {
+    background: #d1f2eb;
+    transition: background 0.2s;
+}
+/* Centrar el título y el párrafo de bienvenida */
+#inicio h1,
+#inicio p {
+    width: 100%; 
+    margin-left: auto; /* Centra horizontalmente (junto con margin-right) */
+    margin-right: auto; /* Centra horizontalmente */
+   /* background: #0aa2b6; /* Fondo azul turquesa (no se verá porque se sobrescribe abajo) */
+    color: #ffffff; /* Color del texto azul turquesa (puede dificultar la lectura) */
+    font-size: 1.3em; /* Aumenta el tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    animation: fadeIn 1.2s ease-in; /* Animación de aparición suave */
+    margin-bottom: 16px;
+   /* font-size: 2em;*/
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Pie de página atractivo */
+footer {
+    width: 100%; /* Ocupa todo el ancho */
+    background: linear-gradient(90deg, #38e6c5 0%, #4f8cff 100%); /* Degradado moderno */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado vertical */
+    font-size: 1.1em; /* Tamaño de fuente */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08); /* Sombra superior suave */
+    margin-top: 40px; /* Separación del contenido principal */
+}
+/* Espacio extra debajo de la tabla de usuarios */
+#informacion {
+    margin-bottom: 100px; /* Aumenta el espacio debajo de la sección */
+}
+
+#tabla-usuarios {
+    margin-bottom: 150px; /* Espacio debajo de la tabla */
+}
+
+
+/* Banner del encabezado */
+.banner {
+    width: 100%;
+    background: linear-gradient(90deg, #a770ef 0%, #f6d365 50%, #fd6e6a 100%);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+/* Menú con botones e iconos */
+.nav-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: #a770ef;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.nav-btn:hover {
+    background: #a770ef;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(167,112,239,0.15);
+}
+
+.icon {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+#inicio h1 span,
+#inicio p span {
+    background-color: rgba(11, 219, 219, 0.7); /* Fondo suave */
+    padding: 0.2em 0.4em; /* Un poco de espacio alrededor del texto */
+    border-radius: 15px; /* Bordes redondeados */
+    display: inline; /* Fondo solo detrás del texto */
+}
+
+#inicio p span,
+#informacion h2 span {
+    background-color: rgba(11, 219, 219, 0.7);
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    display: inline;
+}
+
+#fecha-hora {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+#fecha-hora p {
+    margin: 0.2rem 0;
+}
