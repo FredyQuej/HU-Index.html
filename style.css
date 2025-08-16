@@ -1,61 +1,49 @@
-/* Importa Montserrat desde Google Fonts */
+/* =========================
+   Fuentes y base
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
     font-family: 'Montserrat', Arial, 'Segoe UI', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    color: #333333;
+    background: #f9f9f9 url('img/Tactic.png') center/cover no-repeat;
+    color: #333;
     text-align: center;
-    background-image: url('img/Tactic.png');
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    /*display: flex; */
-   /* justify-content: center;*/
-   /* align-items: center;*/
-    margin: 0; 
-  /*  animation: fadeIn 2s ease-in-out;*/
 }
-    
+
+/* =========================
+   Navegación
+========================= */
 nav {
-  /*  width: 100%;
-    /*background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);*/
-   /* box-shadow: 0 2px 8px rgba(0,0,0,0.08);*/
-    padding: 0;
-    margin-bottom: 30px;
-   /* background-color: #4CAF50;*/
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
 }
+
 nav ul li {
-    margin: 0 25px;
+    margin: 0 5px;
 }
 
 nav ul li a {
     display: block;
     padding: 16px 0;
-    color: #fff;
-    text-decoration: none;
+    font-size: 1.4em;
     font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.2s, border-bottom 0.2s;
-    border-bottom: 2px solid transparent;
-    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
 }
 
 nav ul li a:hover {
@@ -63,119 +51,42 @@ nav ul li a:hover {
     border-bottom: 2px solid #fff;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-/* Centrar la sección de información y la tabla */
-#informacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-/* Estilos atractivos para la tabla */
-#tabla-usuarios {
-    border-collapse: collapse;
-    width: 80%;
-    background: #f8fafc;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-#tabla-usuarios th, #tabla-usuarios td {
-    padding: 14px 18px;
-    text-align: center;
-}
-
-#tabla-usuarios thead {
-    background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);
-    color: #ffffff;
-    font-size: 1.1em;
-}
-
-#tabla-usuarios tbody tr:nth-child(even) {
-    background: #e6f7ff;
-}
-
-#tabla-usuarios tbody tr:nth-child(odd) {
-    background: #fff;
-}
-
-#tabla-usuarios tbody tr:hover {
-    background: #d1f2eb;
-    transition: background 0.2s;
-}
-/* Centrar el título y el párrafo de bienvenida */
-#inicio h1,
-#inicio p {
-    width: 100%; 
-    margin-left: auto; /* Centra horizontalmente (junto con margin-right) */
-    margin-right: auto; /* Centra horizontalmente */
-   /* background: #0aa2b6; /* Fondo azul turquesa (no se verá porque se sobrescribe abajo) */
-    color: #ffffff; /* Color del texto azul turquesa (puede dificultar la lectura) */
-    font-size: 1.3em; /* Aumenta el tamaño de la fuente */
-    text-align: center; /* Centra el texto */
-    animation: fadeIn 1.2s ease-in; /* Animación de aparición suave */
-    margin-bottom: 16px;
-   /* font-size: 2em;*/
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-
-/* Pie de página atractivo */
-footer {
-    width: 100%; /* Ocupa todo el ancho */
-    background: linear-gradient(90deg, #38e6c5 0%, #4f8cff 100%); /* Degradado moderno */
-    color: #fff; /* Texto blanco */
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; /* Espaciado vertical */
-    font-size: 1.1em; /* Tamaño de fuente */
-    letter-spacing: 1px; /* Espaciado entre letras */
-    box-shadow: 0 -2px 12px rgba(0,0,0,0.08); /* Sombra superior suave */
-    margin-top: 40px; /* Separación del contenido principal */
-}
-/* Espacio extra debajo de la tabla de usuarios */
-#informacion {
-    margin-bottom: 100px; /* Aumenta el espacio debajo de la sección */
-}
-
-#tabla-usuarios {
-    margin-bottom: 150px; /* Espacio debajo de la tabla */
-}
-
-
-/* Banner del encabezado */
+/* =========================
+   Banner
+========================= */
 .banner {
+    position: fixed;       /* Se queda fijo en la parte superior */
+    top: 0;
+    left: 0;
     width: 100%;
     background: linear-gradient(90deg, #a770ef 0%, #f6d365 50%, #fd6e6a 100%);
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin: 0;             /* elimina espacios extra */
     padding: 0;
-    margin-bottom: 30px;
+    z-index: 1000;         /* encima de todo */
 }
 
-/* Menú con botones e iconos */
+/* Ajuste para que el contenido no se esconda debajo del banner */
+body {
+    margin: 0;
+    padding-top: 70px;     /* espacio igual a la altura del banner */
+}
+/* =========================
+   Ajuste para Inicio debajo del banner
+========================= */
+#inicio {
+    margin-top: 100px; /* separa el contenido del banner */
+    padding: 20px;
+}
+
 .nav-banner {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 30px;
 }
 
 .nav-btn {
@@ -205,22 +116,82 @@ footer {
     vertical-align: middle;
 }
 
-#inicio h1 span,
-#inicio p span {
-    background-color: rgba(11, 219, 219, 0.7); /* Fondo suave */
-    padding: 0.2em 0.4em; /* Un poco de espacio alrededor del texto */
-    border-radius: 15px; /* Bordes redondeados */
-    display: inline; /* Fondo solo detrás del texto */
+/* =========================
+   Inicio
+========================= */
+#inicio h1,
+#inicio p {
+    width: 100%;
+    margin: 0 auto 16px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-#inicio p span,
+#inicio h1 span,
+#inicio p span {
+    background-color: rgba(11, 219, 219, 0.7);
+    padding: 0.2em 0.4em;
+    border-radius: 15px;
+}
+
+/* =========================
+   Información y tablas
+========================= */
+#informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 10px;
+}
+
 #informacion h2 span {
     background-color: rgba(11, 219, 219, 0.7);
     padding: 0.2em 0.4em;
     border-radius: 5px;
-    display: inline;
 }
 
+#tabla-usuarios {
+    width: 50%;
+    border-collapse: collapse;
+    background: #f8fafc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#tabla-usuarios th,
+#tabla-usuarios td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+#tabla-usuarios thead {
+    background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);
+    color: #fff;
+    font-size: 1.1em;
+}
+
+#tabla-usuarios tbody tr:nth-child(even) {
+    background: #e6f7ff;
+}
+
+#tabla-usuarios tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+#tabla-usuarios tbody tr:hover {
+    background: #d1f2eb;
+    transition: background 0.2s;
+}
+
+/* =========================
+   Fecha y hora
+========================= */
 #fecha-hora {
     text-align: center;
     font-size: 1.1rem;
@@ -230,4 +201,26 @@ footer {
 
 #fecha-hora p {
     margin: 0.2rem 0;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    width: 100%;
+    background: linear-gradient(90deg, #38e6c5 0%, #4f8cff 100%);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+    margin-top: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;   /* elimina espacio */
 }
