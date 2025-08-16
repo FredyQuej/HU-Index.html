@@ -1,10 +1,21 @@
-
-version: '3.8'
-
+version: "3.9"
 services:
   web:
-    image: pagina-web-nginx
-    container_name: pagina-web
+    image: webapp:latest
+    build: .
     ports:
       - "80:80"
-    restart: unless-stopped
+    deploy:
+      mode: replicated
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+    networks:
+      - webnet
+
+networks:
+  webnet:
